@@ -38,7 +38,7 @@ return (
 
       <div className="product-image">
         <img
-  src={`http://localhost:5000/uploads/${product.image[0]}`}
+  src={`http://mern-ecommerce-z8md.onrender.com/uploads/${product.image[0]}`}
   alt={product.name}
 />
       </div>
