@@ -1,0 +1,215 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ABOUT SECTION */
+
+.aboutus{
+    width:90%;
+    margin:auto;
+}
+
+.aboutus h2{
+    text-align:center;
+    margin:50px 0;
+    font-size:32px;
+}
+
+.content{
+    display:flex;
+    align-items:center;
+    gap:50px;
+}
+
+.left-content{
+    flex:1;
+}
+
+.left-content img{
+    width:100%;
+    display:block;
+}
+
+.right-content{
+    flex:2;
+}
+
+.right-content p{
+    line-height:1.8;
+    color:#555;
+}
+
+.right-content h3{
+    margin:20px 0;
+}
+
+/* WHY CHOOSE US */
+
+.why-choose-us{
+    margin:80px 0;
+}
+
+.why-choose-us h2{
+    text-align:left;
+    margin-bottom:40px;
+    font-size:28px;
+}
+
+.features{
+    display:flex;
+}
+
+.feature-card{
+    flex:1;
+    border:1px solid #ddd;
+    padding:50px 30px;
+}
+
+.feature-card h3{
+    margin-bottom:15px;
+}
+
+.feature-card p{
+    color:gray;
+    line-height:1.8;
+}
+
+/* NEWSLETTER */
+
+.newsletter{
+    text-align:center;
+    margin:100px 0;
+}
+
+.newsletter h2{
+    margin-bottom:15px;
+}
+
+.newsletter p{
+    color:gray;
+    margin-bottom:25px;
+}
+
+.subscribe-box{
+    display:flex;
+    justify-content:center;
+}
+
+.subscribe-box input{
+    width:400px;
+    padding:15px;
+    border:1px solid #ddd;
+    outline:none;
+}
+
+.subscribe-box button{
+    padding:15px 30px;
+    background:black;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+/* TABLET */
+
+@media (max-width:768px){
+
+    .aboutus h2{
+        font-size:28px;
+    }
+
+    .content{
+        flex-direction:column;
+        gap:30px;
+    }
+
+    .right-content{
+        width:100%;
+    }
+
+    .features{
+        flex-direction:column;
+    }
+
+    .feature-card{
+        padding:40px 25px;
+    }
+
+    .subscribe-box{
+        flex-direction:column;
+        align-items:center;
+        gap:10px;
+    }
+
+    .subscribe-box input{
+        width:90%;
+    }
+
+    .subscribe-box button{
+        width:90%;
+    }
+}
+
+/* MOBILE */
+
+@media (max-width:480px){
+
+    .aboutus{
+        width:95%;
+    }
+
+    .aboutus h2{
+        font-size:24px;
+        margin:30px 0;
+    }
+
+    .content{
+        gap:20px;
+    }
+
+    .right-content p{
+        font-size:14px;
+    }
+
+    .right-content h3{
+        font-size:18px;
+    }
+
+    .why-choose-us{
+        margin:50px 0;
+    }
+
+    .why-choose-us h2{
+        font-size:22px;
+    }
+
+    .feature-card{
+        padding:25px 20px;
+    }
+
+    .feature-card h3{
+        font-size:16px;
+    }
+
+    .feature-card p{
+        font-size:14px;
+    }
+
+    .newsletter{
+        margin:60px 0;
+    }
+
+    .newsletter h2{
+        font-size:22px;
+    }
+
+    .subscribe-box input{
+        width:100%;
+    }
+
+    .subscribe-box button{
+        width:100%;
+    }
+} 
