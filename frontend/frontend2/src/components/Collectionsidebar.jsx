@@ -13,7 +13,7 @@ const Collectionsidebar = () => {
     const fetchProducts = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/products"
+          "http://mern-ecommerce-z8md.onrender.com/api/products"
         );
 
         setProducts(response.data.products);
