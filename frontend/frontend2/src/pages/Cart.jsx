@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import "./Cart.css";
-const IMAGE_BASE_URL = "http://localhost:5000/uploads";
+const IMAGE_BASE_URL = "http://mern-ecommerce-z8md.onrender.com/uploads";
 import LoginPopup from "../components/LoginPopup";
 import { useNavigate } from "react-router-dom";
 
