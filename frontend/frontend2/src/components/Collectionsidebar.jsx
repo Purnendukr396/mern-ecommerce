@@ -3,7 +3,7 @@ import "./Collectionsidebar.css";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
-const IMAGE_BASE_URL = "https://mern-ecommerce-z8md.onrender.com/uploads";
+const IMAGE_BASE_URL = "http://localhost:5000/uploads";
 
 const Collectionsidebar = () => {
   const navigate = useNavigate();
@@ -13,7 +13,7 @@ const Collectionsidebar = () => {
     const fetchProducts = async () => {
       try {
         const response = await axios.get(
-          "http://mern-ecommerce-z8md.onrender.com/api/products"
+          "http://localhost:5000/api/products"
         );
 
         setProducts(response.data.products);

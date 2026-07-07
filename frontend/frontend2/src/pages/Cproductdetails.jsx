@@ -4,7 +4,7 @@ import axios from "axios";
 import Footer from "../components/Footer";
 import { CartContext } from "../context/CartContext";
 
-const IMAGE_BASE_URL = "http://mern-ecommerce-z8md.onrender.com/uploads";
+const IMAGE_BASE_URL = "http://localhost:5000/uploads";
 
 const Cproductdetails = () => {
   const { id } = useParams();
@@ -17,7 +17,7 @@ const Cproductdetails = () => {
 
   const fetchProduct = async () => {
     try {
-      const res = await axios.get("http://mern-ecommerce-z8md.onrender.com/api/products");
+      const res = await axios.get("http://localhost:5000/api/products");
 
       const found = res.data.products.find((p) => p._id === id);
 
@@ -38,7 +38,7 @@ return (
 
       <div className="product-image">
         <img
-  src={`http://mern-ecommerce-z8md.onrender.com/uploads/${product.image[0]}`}
+  src={`http://localhost:5000/uploads/${product.image[0]}`}
   alt={product.name}
 />
       </div>
@@ -67,3 +67,4 @@ return (
 }
 
 export default Cproductdetails;
+
