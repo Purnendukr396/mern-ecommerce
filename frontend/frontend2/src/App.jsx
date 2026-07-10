@@ -16,6 +16,8 @@ import ProductDetails from "./pages/ProductDetails";
 import Cproductdetails from "./pages/Cproductdetails";
 import CartProvider from "./context/CartContext";
 import Register from './pages/Register'
+import AddProduct from "./pages/AddProduct";
+import AdminLogin from "./pages/AdminLogin";
 
 
 
@@ -41,6 +43,8 @@ const App = () => {
 <Route path="/productdetails/:id" element={<ProductDetails />} />
 <Route path="/Cproductdetails/:id" element={<Cproductdetails />} />
 <Route path="/register" element={<Register />} />
+<Route path="/admin" element={<AddProduct />} />
+<Route path="/admin/login" element={<AdminLogin />} />
 
 
 

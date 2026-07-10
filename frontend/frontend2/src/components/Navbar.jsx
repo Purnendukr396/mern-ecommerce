@@ -26,6 +26,12 @@ const Navbar = () => {
           <NavLink to="/collection">COLLECTION</NavLink>
           <NavLink to="/About">ABOUT</NavLink>
           <NavLink to="/Contact">CONTACT</NavLink>
+          <NavLink
+  to="/admin/login"
+  className={({ isActive }) => (isActive ? "active-link" : "")}
+>
+  ADMIN
+</NavLink>
         </div>
 
         <div className="icons">

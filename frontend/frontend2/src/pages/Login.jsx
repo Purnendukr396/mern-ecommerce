@@ -49,7 +49,13 @@ function Login() {
       });
 
       // Redirect to home page
-      navigate("/");
+      const user = response.data.user;
+
+if (user.role === "admin") {
+  navigate("/admin");
+} else {
+  navigate("/");
+}
 
     } catch (error) {
       alert(error.response?.data?.message || "Something went wrong");

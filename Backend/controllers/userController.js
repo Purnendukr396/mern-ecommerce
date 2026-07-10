@@ -113,6 +113,7 @@ exports.loginUser = async (req, res) => {
     const token = jwt.sign(
       {
         id: user._id,
+         role: user.role,
       },
       "mySecretKey",
       {
@@ -129,6 +130,7 @@ exports.loginUser = async (req, res) => {
         _id: user._id,
         name: user.name,
         email: user.email,
+         role: user.role,
       },
     });
 

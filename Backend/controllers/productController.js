@@ -17,6 +17,47 @@ const getAllProducts = async (req, res) => {
     }
 };
 
+const addProduct = async (req, res) => {
+  try {
+    const {
+      name,
+      description,
+      price,
+      image,
+      category,
+      subCategory,
+      sizes,
+      bestseller,
+    } = req.body;
+
+    const product = new Product({
+      name,
+      description,
+      price,
+      image,
+      category,
+      subCategory,
+      sizes,
+      bestseller,
+    });
+
+    await product.save();
+
+    res.status(201).json({
+      success: true,
+      message: "Product Added Successfully",
+      product,
+    });
+
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: error.message,
+    });
+  }
+};
+
 module.exports = {
-    getAllProducts
+  getAllProducts,
+  addProduct,
 };
